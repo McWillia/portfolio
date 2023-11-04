@@ -1,17 +1,16 @@
 import React from "react";
-import { Button as ChakraButton } from "@chakra-ui/react";
+import {
+  Button as ChakraButton,
+  ButtonProps as ChakraButtonProps,
+} from "@chakra-ui/react";
 import { ButtonThemeConfig } from "./Button.theme";
 
-interface ButtonProps {
+interface ButtonProps extends ChakraButtonProps {
   content?: string;
 }
 
 const Button = ({ content, ...props }: ButtonProps) => {
-  return (
-    <ChakraButton bg={"Marroon.500"} {...props}>
-      {content}
-    </ChakraButton>
-  );
+  return <ChakraButton {...props}>{content}</ChakraButton>;
 };
 
 export { Button, ButtonThemeConfig, type ButtonProps };

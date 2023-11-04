@@ -5,7 +5,8 @@ function App() {
   return (
     <div className="App">
       Mostly working on the CL side to start
-      <Button />
+      <Button variant={"primary"} content={"contents"} />
+      <Button variant={"secondary"} content={"contents"} />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "./Button";
+import { Button, ButtonProps } from "./Button";
 import React from "react";
 
 const meta: Meta<typeof Button> = {
@@ -12,7 +12,8 @@ const meta: Meta<typeof Button> = {
     // @ts-ignore
     variant: {
       options: ["primary", "secondary"],
-      // control: { type: "radio" },
+      control: { type: "radio" },
+      default: "primary",
     },
   },
 };
@@ -21,5 +22,17 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-  render: () => <Button content="CONNNNNNNTENT" />,
+  render: ({ content, variant, ...rest }: ButtonProps) => {
+    return (
+      <Button
+        variant={variant ?? "primary"}
+        content={content ?? ""}
+        {...rest}
+      />
+    );
+  },
+  args: {
+    variant: "primary",
+    content: "Button Content",
+  },
 };

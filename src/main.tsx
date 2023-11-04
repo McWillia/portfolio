@@ -10,7 +10,7 @@ const rootElement = document.getElementById("root");
 // @ts-ignore
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <ChakraBaseProvider theme={ThemesExport.DefaultTheme}>
+    <ChakraBaseProvider theme={ThemesExport.MaroonTheme}>
       <App />
     </ChakraBaseProvider>
   </React.StrictMode>,

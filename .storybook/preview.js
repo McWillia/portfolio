@@ -4,8 +4,6 @@
 
 import  {ThemesExport} from '../src/application/config/theme'
 
-const theme = ThemesExport.DefaultTheme;
-
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -15,7 +13,7 @@ const preview = {
         date: /Date$/,
       },
     },
-    chakra: { theme },
+    chakra: { theme:ThemesExport.MaroonTheme },
   },
 };
 

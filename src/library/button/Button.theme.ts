@@ -6,14 +6,11 @@ const ButtonThemeConfig: ComponentStyleConfig = {
   },
   variants: {
     primary: {
-      bg: "Marroon.100",
+      bg: "primary.500",
     },
     secondary: {
-      bg: "red.500",
+      bg: "light.500",
     },
-  },
-  defaultProps: {
-    variant: "primary",
   },
 };
 
