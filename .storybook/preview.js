@@ -13,7 +13,7 @@ const preview = {
         date: /Date$/,
       },
     },
-    chakra: { theme:ThemesExport.MaroonTheme },
+    chakra: { theme:ThemesExport.SunsetTheme },
   },
 };
 
