@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 storybook-static/
+
+.vs
+
+.vscode

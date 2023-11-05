@@ -17,7 +17,7 @@ const MaroonTheme = extendBaseTheme({
       500: "#FFBF00", // amber
     },
     contrast: {
-      500: "#66b2b2", //verdigris
+      500: "#00DADA", //
     },
     offwhite: {
       500: "#FFECD1", //papaya whip
