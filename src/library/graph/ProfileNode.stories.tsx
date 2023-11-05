@@ -1,4 +1,3 @@
-
 // ProfileNode.stories.ts|tsx
 
 import type { Meta, StoryObj } from "@storybook/react";
@@ -13,8 +12,8 @@ const meta: Meta<typeof ProfileNode> = {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     imgSrc: {
-        options: ["./sad_aang.png", "./bait.jpg", "./momo.png"],
-        control: { type: "radio" },
+      options: ["./sad_aang.png", "./bait.jpg", "./momo.png"],
+      control: { type: "radio" },
     },
   },
 };
@@ -23,11 +22,11 @@ export default meta;
 type Story = StoryObj<typeof ProfileNode>;
 
 export const Primary: Story = {
-    render: ({imgSrc}: ProfileNodeProps) => {
+  render: ({ imgSrc }: ProfileNodeProps) => {
     return (
-        <Box h={500} w={500}>
-            <ProfileNode imgSrc={imgSrc} />
-        </Box>
+      <Box h={500} w={500}>
+        <ProfileNode imgSrc={imgSrc} />
+      </Box>
     );
   },
   args: {
@@ -35,16 +34,13 @@ export const Primary: Story = {
   },
 };
 
-
 export const UndefinedSrc: Story = {
-    render: () => {
-      return (
-          <Box h={500} w={500}>
-              <ProfileNode imgSrc={undefined} />
-          </Box>
-      );
-    },
-    args: {
-    },
-  };
-  
+  render: () => {
+    return (
+      <Box h={500} w={500}>
+        <ProfileNode imgSrc={undefined} />
+      </Box>
+    );
+  },
+  args: {},
+};

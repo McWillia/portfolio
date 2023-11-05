@@ -1,4 +1,3 @@
-
 // Graph.stories.ts|tsx
 
 import type { Meta, StoryObj } from "@storybook/react";
@@ -9,8 +8,7 @@ import { Box } from "@chakra-ui/react";
 
 const meta: Meta<typeof Graph> = {
   component: Graph,
-  argTypes: {
-  },
+  argTypes: {},
 };
 
 export default meta;
@@ -19,12 +17,10 @@ type Story = StoryObj<typeof Graph>;
 export const Primary: Story = {
   render: () => {
     return (
-        <Box h={600} w={900}>
-            <Graph />
-
-        </Box>
+      <Box h={600} w={900}>
+        <Graph />
+      </Box>
     );
   },
-  args: {
-  },
+  args: {},
 };

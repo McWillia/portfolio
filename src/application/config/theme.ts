@@ -39,25 +39,23 @@ const SunsetTheme = extendBaseTheme({
       500: "#FF5A5A", //
       100: "#ffd1d1", //
     },
-    dark:{
-      500:"#C04CFD" // 
+    dark: {
+      500: "#C04CFD", //
     },
-    light:{
-      500:"#FF8A37" // 
+    light: {
+      500: "#FF8A37", //
     },
-    contrast:{
-      500:"#5E2BFF" //
+    contrast: {
+      500: "#5E2BFF", //
     },
-    offwhite:{
-      500:"#FDED3C" //
-
+    offwhite: {
+      500: "#FDED3C", //
     },
-    grey:{
-      900:"#353333",
-      500:"#4D4949",
-      100:"#827f7f"
-
-    }
+    grey: {
+      900: "#353333",
+      500: "#4D4949",
+      100: "#827f7f",
+    },
   },
   components: {
     Button: ButtonThemeConfig,
