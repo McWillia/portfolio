@@ -2,6 +2,10 @@ import { extendBaseTheme } from "@chakra-ui/react";
 
 const SunsetTheme = extendBaseTheme({
   colors: {
+    scotland: {
+      blue: "#005EB8",
+      brown:"#8B4513",
+    },
     day: {
       primary: {
         500: "#ee5d6c", //
