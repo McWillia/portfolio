@@ -38,6 +38,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       flexGrow={1}
       paddingTop={paddingVal}
       transition={"0.2s"}
+      paddingLeft={2}
     >
       <Heading fontSize={"7xl"} fontFamily={"silk"} color={"white"}>
         Steven
