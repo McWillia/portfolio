@@ -37,7 +37,7 @@ const SunsetTheme = extendBaseTheme({
         500: "#f7c3da", //
       },
       contrast: {
-        500: "#ffbd8b", //
+        500: "#e07122", //
       },
       offwhite: {
         500: "#fff6de", //
