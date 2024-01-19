@@ -22,14 +22,14 @@ type Story = StoryObj<typeof Header>;
 
 export const Primary: Story = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  render: ({skyColour="day.light.500", buildingColour="day.primary.500" }:HeaderProps) => {
+  render: ({
+    skyColour = "day.light.500",
+    buildingColour = "day.primary.500",
+  }: HeaderProps) => {
     return (
       <Flex padding={0} bg="green.500">
-        <Header skyColour={skyColour} buildingColour={buildingColour}        />
-
+        <Header skyColour={skyColour} buildingColour={buildingColour} />
       </Flex>
-                
-      
     );
-  }
+  },
 };

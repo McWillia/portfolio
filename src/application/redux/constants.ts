@@ -1,13 +1,13 @@
-export enum COLOUR_THEME_OPTIONS{
-    'day',
-    'night',
-    'dawn'
+export enum COLOUR_THEME_OPTIONS {
+  "day",
+  "night",
+  "dawn",
 }
 
 export interface StateType {
-    colourTheme: COLOUR_THEME_OPTIONS
+  colourTheme: COLOUR_THEME_OPTIONS;
 }
 
 export const initialState: StateType = {
-    colourTheme: COLOUR_THEME_OPTIONS.day
+  colourTheme: COLOUR_THEME_OPTIONS.day,
 };

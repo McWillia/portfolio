@@ -22,20 +22,15 @@ type Story = StoryObj<typeof Castle>;
 
 export const Primary: Story = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  render: ({...rest }:any) => {
+  render: ({ ...rest }: any) => {
     return (
-        <Card>
-            <CardBody padding={0} bg="green.500">
-                <Flex>
-                  <Castle 
-                    {...rest}
-                  />
-                </Flex>
-                
-            </CardBody>
-            
-        </Card>
-      
+      <Card>
+        <CardBody padding={0} bg="green.500">
+          <Flex>
+            <Castle {...rest} />
+          </Flex>
+        </CardBody>
+      </Card>
     );
-  }
+  },
 };

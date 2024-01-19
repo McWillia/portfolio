@@ -1,7 +1,7 @@
 {
-  "name": "polychain",
-  "version": "0.2.0",
-  "description": "Initial Work POC into social media idea",
+  "name": "portfolio_site",
+  "version": "0.0.1",
+  "description": "A portfolio site for myself",
   "author": "Steven McWilliam",
   "type": "module",
   "repository": {},

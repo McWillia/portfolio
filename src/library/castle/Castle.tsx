@@ -5,15 +5,19 @@ import { Middle } from "../middle";
 import { Doorway } from "../doorway";
 
 interface CastleProps {
-  skyColour:string,
-  buildingColour:string,
+  skyColour: string;
+  buildingColour: string;
 }
 
-
-const Castle = ({ skyColour = "day.light.500", buildingColour = "day.primary.500"}: CastleProps) => <Flex  w={"100%"} flexDirection={"column"} flexGrow={1}>
-  <Header skyColour={skyColour} buildingColour={buildingColour}/>
-  <Middle buildingColour={buildingColour}/>
-  <Doorway skyColour={skyColour} buildingColour={buildingColour}/>
-</Flex>
+const Castle = ({
+  skyColour = "day.light.500",
+  buildingColour = "day.primary.500",
+}: CastleProps) => (
+  <Flex w={"100%"} flexDirection={"column"} flexGrow={1}>
+    <Header skyColour={skyColour} buildingColour={buildingColour} />
+    <Middle buildingColour={buildingColour} />
+    <Doorway skyColour={skyColour} buildingColour={buildingColour} />
+  </Flex>
+);
 
 export { Castle, type CastleProps };

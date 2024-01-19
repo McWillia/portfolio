@@ -6,8 +6,7 @@ import { Card, CardBody } from "@chakra-ui/react";
 
 const meta: Meta<typeof StyledLink> = {
   component: StyledLink,
-  argTypes: {
-  },
+  argTypes: {},
 };
 
 export default meta;
@@ -17,10 +16,10 @@ export const Primary: Story = {
   render: () => {
     return (
       <Card>
-          <CardBody padding={3} bg="day.primary.500">
-              <StyledLink displayText={"Display"} hrefVal={"#"} />
-          </CardBody>
+        <CardBody padding={3} bg="day.primary.500">
+          <StyledLink displayText={"Display"} hrefVal={"#"} />
+        </CardBody>
       </Card>
     );
-  }
+  },
 };

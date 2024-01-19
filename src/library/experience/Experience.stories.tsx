@@ -10,11 +10,11 @@ const meta: Meta<typeof Experience> = {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     startDate: {
-      control: 'text',
+      control: "text",
       default: "start",
     },
     endDate: {
-      control: 'text',
+      control: "text",
       default: "end",
     },
   },
@@ -24,17 +24,13 @@ export default meta;
 type Story = StoryObj<typeof Experience>;
 
 export const Primary: Story = {
-  render: ({...all}: ExperienceProps) => {
+  render: ({ ...all }: ExperienceProps) => {
     return (
-        <Card>
-            <CardBody padding={3} bg="green.500">
-               <Experience {...all} />
-  
-                
-            </CardBody>
-            
-        </Card>
-      
+      <Card>
+        <CardBody padding={3} bg="green.500">
+          <Experience {...all} />
+        </CardBody>
+      </Card>
     );
   },
   args: {
@@ -42,7 +38,8 @@ export const Primary: Story = {
     endDate: "end",
     title: "title",
     company: "company",
-    blurb: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officiis ea distinctio autem magnam reprehenderit optio eius minus similique. Dignissimos necessitatibus fugit eaque? Tempore consequatur mollitia unde quia! Quibusdam, nostrum!",
-    techUsed: ["one", "two"]
+    blurb:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officiis ea distinctio autem magnam reprehenderit optio eius minus similique. Dignissimos necessitatibus fugit eaque? Tempore consequatur mollitia unde quia! Quibusdam, nostrum!",
+    techUsed: ["one", "two"],
   },
 };

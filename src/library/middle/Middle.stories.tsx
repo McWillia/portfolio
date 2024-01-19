@@ -23,15 +23,11 @@ type Story = StoryObj<typeof Middle>;
 export const Primary: Story = {
   render: () => {
     return (
-        <Card>
-            <CardBody padding={3} bg="green.500">
-               <Middle buildingColour={"day.primary.500"}/>
-  
-                
-            </CardBody>
-            
-        </Card>
-      
+      <Card>
+        <CardBody padding={3} bg="green.500">
+          <Middle buildingColour={"day.primary.500"} />
+        </CardBody>
+      </Card>
     );
-  }
+  },
 };
