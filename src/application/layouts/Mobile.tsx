@@ -6,7 +6,16 @@ import { SUN_SIZE, ThemeChanger } from "../../library/theme_changer";
 import { BubbleCard } from "../../library/bubble_card";
 import { Experience } from "../../library/experience";
 import { Castle } from "../../library/castle";
-import { getAboutText, getCertifications, getSiteInfo, xp_bw, xp_i, xp_jpm, xp_sh4, xp_sh5 } from "../config/commonText";
+import {
+  getAboutText,
+  getCertifications,
+  getSiteInfo,
+  xp_bw,
+  xp_i,
+  xp_jpm,
+  xp_sh4,
+  xp_sh5,
+} from "../config/commonText";
 
 const Mobile = () => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
@@ -44,7 +53,6 @@ const Mobile = () => {
           </Text>
 
           <Text>{getAboutText}</Text>
-
         </BubbleCard>
 
         {/* ---------------------- CERTIFICATION SECTION ---------------------- */}
@@ -53,9 +61,7 @@ const Mobile = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="cert_section">
             Certification
           </Text>
-          <Experience
-            {...getCertifications}
-          />
+          <Experience {...getCertifications} />
         </BubbleCard>
 
         {/* ---------------------- TECH SECTION ---------------------- */}
@@ -82,21 +88,11 @@ const Mobile = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="xp_section">
             Experience
           </Text>
-          <Experience
-            {...xp_bw}
-          />
-          <Experience
-            {...xp_jpm}
-          />
-          <Experience
-            {...xp_i}
-          />
-          <Experience
-            {...xp_sh5}
-          />
-          <Experience
-            {...xp_sh4}
-          />
+          <Experience {...xp_bw} />
+          <Experience {...xp_jpm} />
+          <Experience {...xp_i} />
+          <Experience {...xp_sh5} />
+          <Experience {...xp_sh4} />
         </BubbleCard>
 
         {/* ---------------------- Site creation SECTION ---------------------- */}
@@ -106,7 +102,6 @@ const Mobile = () => {
             About the Site
           </Text>
           {getSiteInfo}
-
         </BubbleCard>
       </Flex>
 
