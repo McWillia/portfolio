@@ -23,11 +23,7 @@ const Experience = ({
   techUsed,
 }: ExperienceProps) => (
   <Flex direction={"column"} paddingBottom={5}>
-    <Flex
-      fontSize={"xl"}
-      direction={"row"}
-      // fontFamily={"silk"}
-    >
+    <Flex fontSize={"xl"} direction={"row"}>
       <Text fontWeight={"bold"}>{company}</Text> / <Text>{title}</Text>
     </Flex>
     {endDate && endDate.length > 0 ? (
@@ -41,12 +37,13 @@ const Experience = ({
     <Text>{blurb}</Text>
 
     {techUsed && (
-      <Flex direction={"row"} gap="2" fontWeight={"light"}>
-        Technologies used:{" "}
-        {techUsed.map((tech) => (
-          <Text key={`tech-${tech}`}>{tech}</Text>
-        ))}
-      </Flex>
+      <Text key={`tech-used`} fontWeight={"light"}>
+        {techUsed.reduce((running, next, index) => {
+          return index === 0
+            ? running.concat(`${next}`)
+            : running.concat(`, ${next}`);
+        }, "Technologies used: ")}
+      </Text>
     )}
   </Flex>
 );

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import { StyledLink } from "../styled_link";
 import { useSelector } from "react-redux";
 import {
@@ -17,6 +17,8 @@ const Middle = ({ buildingColour }: MiddleProps) => {
     (state: StateType) => state.colourTheme,
   );
 
+  const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
+
   useEffect(() => {
     const handleScroll = () => {
       setPaddingVal(window.scrollY);
@@ -29,7 +31,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
     };
   }, []);
 
-  return (
+  return isDesktopOrLaptop ? (
     <Flex
       h={"100%"}
       w={"100%"}
@@ -50,6 +52,36 @@ const Middle = ({ buildingColour }: MiddleProps) => {
         fontFamily={"silk"}
         color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
         fontSize={"3xl"}
+      >
+        Frontend Developer //
+        <br />
+        Aspiring Scrum Master
+      </Text>
+
+      <StyledLink displayText={"about"} hrefVal={"#about_section"} />
+      <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
+      <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
+      <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
+    </Flex>
+  ) : (
+    <Flex
+      w={"100%"}
+      bg={buildingColour}
+      direction={"column"}
+      flexGrow={1}
+      paddingLeft={2}
+      // alignItems={"center"}
+    >
+      <Heading fontSize={"5xl"} fontFamily={"silk"} color={"white"}>
+        Steven
+        <br />
+        McWilliam
+      </Heading>
+
+      <Text
+        fontFamily={"silk"}
+        color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
+        fontSize={"xl"}
       >
         Frontend Developer //
         <br />

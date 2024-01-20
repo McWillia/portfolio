@@ -10,7 +10,7 @@ import {
 // interface ThemeChangerProps {
 // }
 
-const SUN_SIZE = 24;
+export const SUN_SIZE = 24;
 
 const ThemeChanger = () => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
