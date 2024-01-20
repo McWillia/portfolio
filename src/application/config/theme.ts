@@ -4,7 +4,7 @@ const SunsetTheme = extendBaseTheme({
   colors: {
     scotland: {
       blue: "#005EB8",
-      brown:"#8B4513",
+      brown: "#8B4513",
     },
     day: {
       primary: {

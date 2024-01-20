@@ -9,5 +9,5 @@ export interface StateType {
 }
 
 export const initialState: StateType = {
-  colourTheme: COLOUR_THEME_OPTIONS.day,
+  colourTheme: COLOUR_THEME_OPTIONS.dawn,
 };
