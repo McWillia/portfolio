@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 
 interface ExperienceProps {
+  key: string;
   startDate: string;
   endDate?: string;
   title: string;
