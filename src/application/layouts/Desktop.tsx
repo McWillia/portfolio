@@ -27,7 +27,7 @@ const Desktop = () => {
 
   return (
     <Flex className="App" h={"100%"} position={"relative"}>
-      <Flex w={"600px"} minH={"calc(100% - 128px)"} flexShrink={0}>
+      <Flex w={"600px"} minH={"100%"} flexShrink={0}>
         <Castle
           skyColour={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
           buildingColour={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`}
