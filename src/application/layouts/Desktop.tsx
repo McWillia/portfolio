@@ -8,13 +8,16 @@ import { COLOUR_THEME_OPTIONS, StateType } from "../redux/constants";
 import { useSelector } from "react-redux";
 import {
   getAboutText,
-  getCertifications,
+  cert_csm,
   getSiteInfo,
   xp_bw,
   xp_i,
   xp_jpm,
   xp_sh4,
   xp_sh5,
+  cert_d,
+  getPhone,
+  getEmail,
 } from "../config/commonText";
 
 const Desktop = () => {
@@ -40,13 +43,38 @@ const Desktop = () => {
         flexShrink={1}
       >
         {/* ---------------------- ABOUT SECTION ---------------------- */}
-        <BubbleCard padding={2} marginBottom={5} flexDirection={"column"}>
-          <Text fontSize={"3xl"} fontFamily={"silk"} id="about_section">
-            About
-          </Text>
 
-          <Text>{getAboutText}</Text>
-        </BubbleCard>
+        <Flex>
+          <BubbleCard
+            padding={2}
+            marginBottom={5}
+            flexDirection={"column"}
+            w={"80%"}
+          >
+            <Text fontSize={"3xl"} fontFamily={"silk"} id="about_section">
+              About
+            </Text>
+            <Text>{getAboutText}</Text>
+          </BubbleCard>
+
+          <BubbleCard
+            padding={2}
+            marginBottom={5}
+            marginLeft={5}
+            flexDirection={"column"}
+            w={"20%"}
+          >
+            <Flex flexDirection={"column"}>
+              <Text fontSize={"3xl"} fontFamily={"silk"}>
+                Contact
+              </Text>
+              <Flex flexDirection={"column"} paddingTop={5}>
+                <Text>{getPhone}</Text>
+                <Text>{getEmail}</Text>
+              </Flex>
+            </Flex>
+          </BubbleCard>
+        </Flex>
 
         {/* ---------------------- CERTIFICATION SECTION ---------------------- */}
 
@@ -54,7 +82,8 @@ const Desktop = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="cert_section">
             Certification
           </Text>
-          <Experience {...getCertifications} />
+          <Experience {...cert_d} />
+          <Experience {...cert_csm} />
         </BubbleCard>
 
         {/* ---------------------- TECH SECTION ---------------------- */}
@@ -92,7 +121,7 @@ const Desktop = () => {
         {/* ---------------------- Site creation SECTION ---------------------- */}
 
         <BubbleCard padding={2} marginBottom={5} flexDirection={"column"}>
-          <Text fontSize={"3xl"} fontFamily={"silk"} id="xp_section">
+          <Text fontSize={"3xl"} fontFamily={"silk"} id="site_section">
             About the Site
           </Text>
           {getSiteInfo}
