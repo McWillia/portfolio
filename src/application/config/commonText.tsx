@@ -1,7 +1,7 @@
 import { ExperienceProps } from "../../library/experience";
 
 export const getAboutText =
-  "I am a young professional trained in software engineering and software development practices. I completed my Bachelors degree in Computer Science at the University of St Andrews in 2020 and since then have been working as a frontend developer. Recently I've been thinking about other roles in the software development space and to that end, got myself certified as a scrum master.";
+  "I am a young professional trained in software engineering and software development practices living on Vancouver Island, BC. I completed my Bachelors degree in Computer Science at the University of St Andrews in 2020 and since then have been working as a frontend developer. Recently I've been thinking about other roles in the software development space and to that end, got myself certified as a scrum master.";
 
 export const getPhone = "+1 (250) 686 5299";
 export const getEmail = "steve-mcw@live.co.uk";

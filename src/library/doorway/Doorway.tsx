@@ -7,14 +7,14 @@ interface DoorwayProps {
 }
 
 const DOOR_CLIP_PATH =
-  "polygon(71% 100%, 71% 60%, 67% 45%, 61% 45%, 57% 60%, 57% 100%)";
+  "polygon(71% 100%, 71% 30%, 67% 5%, 61% 5%, 57% 30%, 57% 100%)";
 
 const Doorway = ({ skyColour, buildingColour }: DoorwayProps) => {
   const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
 
   return (
     <Flex
-      h={isDesktopOrLaptop ? 96 : 24}
+      h={isDesktopOrLaptop ? 48 : 24}
       w={"100%"}
       bg={buildingColour}
       flexGrow={0}

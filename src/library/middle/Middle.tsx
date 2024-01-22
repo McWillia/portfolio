@@ -33,7 +33,6 @@ const Middle = ({ buildingColour }: MiddleProps) => {
 
   return isDesktopOrLaptop ? (
     <Flex
-      h={"100%"}
       w={"100%"}
       bg={buildingColour}
       direction={"column"}
