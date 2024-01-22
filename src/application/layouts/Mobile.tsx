@@ -7,8 +7,11 @@ import { BubbleCard } from "../../library/bubble_card";
 import { Experience } from "../../library/experience";
 import { Castle } from "../../library/castle";
 import {
+  cert_csm,
+  cert_d,
   getAboutText,
-  getCertifications,
+  getEmail,
+  getPhone,
   getSiteInfo,
   xp_bw,
   xp_i,
@@ -51,8 +54,19 @@ const Mobile = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="about_section">
             About
           </Text>
-
           <Text>{getAboutText}</Text>
+        </BubbleCard>
+
+        <BubbleCard padding={2} marginBottom={5} flexDirection={"column"}>
+          <Flex flexDirection={"column"}>
+            <Text fontSize={"3xl"} fontFamily={"silk"}>
+              Contact
+            </Text>
+            <Flex flexDirection={"column"}>
+              <Text>{getPhone}</Text>
+              <Text>{getEmail}</Text>
+            </Flex>
+          </Flex>
         </BubbleCard>
 
         {/* ---------------------- CERTIFICATION SECTION ---------------------- */}
@@ -61,7 +75,8 @@ const Mobile = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="cert_section">
             Certification
           </Text>
-          <Experience {...getCertifications} />
+          <Experience {...cert_d} />
+          <Experience {...cert_csm} />
         </BubbleCard>
 
         {/* ---------------------- TECH SECTION ---------------------- */}
@@ -98,7 +113,7 @@ const Mobile = () => {
         {/* ---------------------- Site creation SECTION ---------------------- */}
 
         <BubbleCard padding={2} marginBottom={5} flexDirection={"column"}>
-          <Text fontSize={"3xl"} fontFamily={"silk"} id="xp_section">
+          <Text fontSize={"3xl"} fontFamily={"silk"} id="site_section">
             About the Site
           </Text>
           {getSiteInfo}

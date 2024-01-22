@@ -58,10 +58,14 @@ const Middle = ({ buildingColour }: MiddleProps) => {
         Aspiring Scrum Master
       </Text>
 
-      <StyledLink displayText={"about"} hrefVal={"#about_section"} />
+      <StyledLink
+        displayText={"about and contact"}
+        hrefVal={"#about_section"}
+      />
       <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
       <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
       <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
+      <StyledLink displayText={"Site Info"} hrefVal={"#site_section"} />
     </Flex>
   ) : (
     <Flex
@@ -70,7 +74,6 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       direction={"column"}
       flexGrow={1}
       paddingLeft={2}
-      // alignItems={"center"}
     >
       <Heading fontSize={"5xl"} fontFamily={"silk"} color={"white"}>
         Steven
@@ -92,6 +95,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
       <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
       <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
+      <StyledLink displayText={"Site Info"} hrefVal={"#site_section"} />
     </Flex>
   );
 };

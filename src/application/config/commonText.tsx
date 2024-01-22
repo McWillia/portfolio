@@ -3,7 +3,19 @@ import { ExperienceProps } from "../../library/experience";
 export const getAboutText =
   "I am a young professional trained in software engineering and software development practices. I completed my Bachelors degree in Computer Science at the University of St Andrews in 2020 and since then have been working as a frontend developer. Recently I've been thinking about other roles in the software development space and to that end, got myself certified as a scrum master.";
 
-export const getCertifications: ExperienceProps = {
+export const getPhone = "+1 (250) 686 5299";
+export const getEmail = "steve-mcw@live.co.uk";
+
+export const cert_d: ExperienceProps = {
+  key: "cert_d",
+  startDate: "Sep 2016",
+  endDate: "May 2020",
+  title: "BSci in Computer Science",
+  company: "University Of St Andrews",
+  blurb: "",
+};
+
+export const cert_csm: ExperienceProps = {
   key: "cert_csm",
   startDate: "Dec 2023",
   endDate: "Dec 2025",
@@ -14,7 +26,7 @@ export const getCertifications: ExperienceProps = {
 };
 
 export const getSiteInfo =
-  "I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact.";
+  "I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact. I've made use of Chakra's useMediaQuery hook to check for screen width in order to provide a mobile friendly layout for the site as well as adapt components to a mobile frienly UX.";
 
 export const xp_bw: ExperienceProps = {
   key: "xp_bw",
