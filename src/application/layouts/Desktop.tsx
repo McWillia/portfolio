@@ -18,6 +18,7 @@ import {
   cert_d,
   getContact
 } from "../config/commonText";
+import { ExternalLink } from "../../library/external_link";
 
 const Desktop = () => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
@@ -115,6 +116,9 @@ const Desktop = () => {
           <Experience {...xp_i} />
           <Experience {...xp_sh5} />
           <Experience {...xp_sh4} />
+
+          <ExternalLink fontSize={"2xl"} displayText={"Full CV Here"} hrefVal={"/portfolio/StevenMcWilliam_CS.pdf"}/>
+
         </BubbleCard>
 
         {/* ---------------------- Site creation SECTION ---------------------- */}

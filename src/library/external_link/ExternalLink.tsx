@@ -13,13 +13,13 @@ interface ExternalLinkProps extends LinkProps {
   hrefVal: string;
 }
 
-const ExternalLink = ({ displayText, hrefVal }: ExternalLinkProps) => {
+const ExternalLink = ({ displayText, hrefVal, ...rest }: ExternalLinkProps) => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
     (state: StateType) => state.colourTheme,
   );
 
   return (
-    <Link href={hrefVal} isExternal display={"flex"} alignItems={"center"} color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`} fontWeight={"semibold"}>
+    <Link {...rest} href={hrefVal}  display={"flex"} alignItems={"center"} color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`} fontWeight={"semibold"} >
       {displayText} <ExternalLinkIcon marginX={2} />
     </Link>
   );

@@ -43,8 +43,10 @@ export const cert_csm: ExperienceProps = {
   blurb:<Text>I validated my knowledge and understanding of agile methodologies and their use in practical software development as well as better understand the nuance of the roles and responsibilities of the product and development teams.</Text>,
 };
 
-export const getSiteInfo =
-  "I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact. I've made use of Chakra's useMediaQuery hook to check for screen width in order to provide a mobile friendly layout for the site as well as adapt components to a mobile friendly UX.";
+export const getSiteInfo = <Flex flexDirection={"column"}>
+  <Text>I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact. I've made use of Chakra's useMediaQuery hook to check for screen width in order to provide a mobile friendly layout for the site as well as adapt components to a mobile friendly UX.</Text>
+  <ExternalLink fontSize={"2xl"} displayText={"View Repo"} hrefVal={"https://github.com/McWillia/portfolio"} isExternal/>
+</Flex>
 
 export const xp_bw: ExperienceProps = {
   key: "xp_bw",
@@ -129,7 +131,7 @@ export const xp_sh4: ExperienceProps = {
     <ListItem><ListIcon as={ChevronRightIcon} />Designed and implemented a cookie-clicker-style game that centred around a pointless button. </ListItem>
     <ListItem><ListIcon as={ChevronRightIcon} />Implemented using HTML5 grid systems, JQuery for dynamic styling, and local storage to track data.</ListItem>
     <ListItem><ListIcon as={ChevronRightIcon} />For this Hackathon, I received the prize for best presentation due to my charming demonstration of my game.</ListItem>
-    <ListItem><ExternalLink displayText={"View Here"} hrefVal={"https://mcwillia.github.io/PointlessButton/"}/></ListItem>
+    <ListItem><ExternalLink displayText={"View Here"} hrefVal={"https://mcwillia.github.io/PointlessButton/"} isExternal/></ListItem>
   </UnorderedList>,
   techUsed: ["HTML5 grid systems", "JQuery"],
 };
