@@ -16,8 +16,7 @@ import {
   xp_sh4,
   xp_sh5,
   cert_d,
-  getPhone,
-  getEmail,
+  getContact
 } from "../config/commonText";
 
 const Desktop = () => {
@@ -54,7 +53,7 @@ const Desktop = () => {
             <Text fontSize={"3xl"} fontFamily={"silk"} id="about_section">
               About
             </Text>
-            <Text>{getAboutText}</Text>
+            {getAboutText}
           </BubbleCard>
 
           <BubbleCard
@@ -62,15 +61,15 @@ const Desktop = () => {
             marginBottom={5}
             marginLeft={5}
             flexDirection={"column"}
-            w={"20%"}
+            maxW={"20%"}
+            minW={44}
           >
             <Flex flexDirection={"column"}>
               <Text fontSize={"3xl"} fontFamily={"silk"}>
                 Contact
               </Text>
               <Flex flexDirection={"column"} paddingTop={5}>
-                <Text>{getPhone}</Text>
-                <Text>{getEmail}</Text>
+                {getContact}
               </Flex>
             </Flex>
           </BubbleCard>

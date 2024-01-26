@@ -10,8 +10,7 @@ import {
   cert_csm,
   cert_d,
   getAboutText,
-  getEmail,
-  getPhone,
+  getContact,
   getSiteInfo,
   xp_bw,
   xp_i,
@@ -54,7 +53,7 @@ const Mobile = () => {
           <Text fontSize={"3xl"} fontFamily={"silk"} id="about_section">
             About
           </Text>
-          <Text>{getAboutText}</Text>
+          {getAboutText}
         </BubbleCard>
 
         <BubbleCard padding={2} marginBottom={5} flexDirection={"column"}>
@@ -63,8 +62,7 @@ const Mobile = () => {
               Contact
             </Text>
             <Flex flexDirection={"column"}>
-              <Text>{getPhone}</Text>
-              <Text>{getEmail}</Text>
+              {getContact}
             </Flex>
           </Flex>
         </BubbleCard>
