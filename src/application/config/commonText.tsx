@@ -8,6 +8,7 @@ import {
   Flex
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ExternalLink } from "../../library/external_link";
 
 
 export const getAboutText = <Flex flexDirection={"column"}>
@@ -128,6 +129,7 @@ export const xp_sh4: ExperienceProps = {
     <ListItem><ListIcon as={ChevronRightIcon} />Designed and implemented a cookie-clicker-style game that centred around a pointless button. </ListItem>
     <ListItem><ListIcon as={ChevronRightIcon} />Implemented using HTML5 grid systems, JQuery for dynamic styling, and local storage to track data.</ListItem>
     <ListItem><ListIcon as={ChevronRightIcon} />For this Hackathon, I received the prize for best presentation due to my charming demonstration of my game.</ListItem>
+    <ListItem><ExternalLink displayText={"View Here"} hrefVal={"https://mcwillia.github.io/PointlessButton/"}/></ListItem>
   </UnorderedList>,
   techUsed: ["HTML5 grid systems", "JQuery"],
 };

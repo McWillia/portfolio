@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "@chakra-ui/react";
+import { Link, LinkProps } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 import {
   COLOUR_THEME_OPTIONS,
   StateType,
 } from "../../application/redux/constants";
 
-interface DoorwayProps {
+
+interface StyledLinkProps extends LinkProps {
   displayText: string;
   hrefVal: string;
 }
 
-const StyledLink = ({ displayText, hrefVal }: DoorwayProps) => {
+const StyledLink = ({ displayText, hrefVal }: StyledLinkProps) => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
     (state: StateType) => state.colourTheme,
   );
