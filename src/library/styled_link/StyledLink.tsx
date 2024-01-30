@@ -6,7 +6,6 @@ import {
   StateType,
 } from "../../application/redux/constants";
 
-
 interface StyledLinkProps extends LinkProps {
   displayText: string;
   hrefVal: string;

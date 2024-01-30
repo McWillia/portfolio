@@ -19,7 +19,6 @@ const Experience = ({
   blurb,
   techUsed,
 }: ExperienceProps) => {
-
   const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
 
   return (
@@ -47,7 +46,7 @@ const Experience = ({
         </Text>
       )}
     </Flex>
-  )
+  );
 };
 
 export { Experience, type ExperienceProps };

@@ -18,6 +18,7 @@ import {
   xp_sh4,
   xp_sh5,
 } from "../config/commonText";
+import { ExternalLink } from "../../library/external_link";
 
 const Mobile = () => {
   const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
@@ -61,9 +62,7 @@ const Mobile = () => {
             <Text fontSize={"3xl"} fontFamily={"silk"}>
               Contact
             </Text>
-            <Flex flexDirection={"column"}>
-              {getContact}
-            </Flex>
+            <Flex flexDirection={"column"}>{getContact}</Flex>
           </Flex>
         </BubbleCard>
 
@@ -106,6 +105,11 @@ const Mobile = () => {
           <Experience {...xp_i} />
           <Experience {...xp_sh5} />
           <Experience {...xp_sh4} />
+          <ExternalLink
+            fontSize={"2xl"}
+            displayText={"Full CV Here"}
+            hrefVal={"/portfolio/StevenMcWilliam_CS.pdf"}
+          />
         </BubbleCard>
 
         {/* ---------------------- Site creation SECTION ---------------------- */}

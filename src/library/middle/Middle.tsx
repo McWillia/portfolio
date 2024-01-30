@@ -20,7 +20,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
   const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
 
   useEffect(() => {
-    const handleScroll = () => {      
+    const handleScroll = () => {
       setPaddingVal(window.scrollY);
     };
 
@@ -72,7 +72,6 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       flexGrow={1}
       paddingLeft={2}
       data-testid="castle-middle-mobile"
-
     >
       <Heading fontSize={"5xl"} fontFamily={"silk"} color={"white"}>
         Steven

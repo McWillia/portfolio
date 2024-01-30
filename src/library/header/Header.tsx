@@ -12,7 +12,12 @@ const ROOF_CLIP_PATH =
 const Header = ({ skyColour, buildingColour }: HeaderProps) => {
   return (
     <Box w={"100%"} flexGrow={0} bg={skyColour} data-testid="header">
-      <Flex position={"relative"} paddingTop={2} paddingLeft={2} data-testid="flag">
+      <Flex
+        position={"relative"}
+        paddingTop={2}
+        paddingLeft={2}
+        data-testid="flag"
+      >
         <Box h={16} w={2} bg={"scotland.brown"} />
         <Box h={10} w={20} bg={"scotland.blue"} />
         <Box

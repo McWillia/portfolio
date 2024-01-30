@@ -6,8 +6,7 @@ import { Card, CardBody } from "@chakra-ui/react";
 
 const meta: Meta<typeof Middle> = {
   component: Middle,
-  argTypes: {
-  },
+  argTypes: {},
 };
 
 export default meta;
