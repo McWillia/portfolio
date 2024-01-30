@@ -21,6 +21,7 @@ const BubbleCard = ({ children, ...rest }: BubbleCardProps) => {
       w={"100%"}
       boxShadow={"10px 10px rgba(0,0,0,0.2)"}
       borderRadius={20}
+      data-testid="bubble-card"
       {...rest}
     >
       {children}

@@ -32,11 +32,8 @@ const ThemeChanger = () => {
     case COLOUR_THEME_OPTIONS.night:
       bg = "white";
       break;
-    case COLOUR_THEME_OPTIONS.dawn:
-      bg = "#ffe9ad";
-      break;
     default:
-      bg = "orange.100";
+      bg = "#ffe9ad";
       break;
   }
 
@@ -51,6 +48,7 @@ const ThemeChanger = () => {
       fontFamily={"silk"}
       justifyContent={"center"}
       alignItems={"start"}
+      data-testid="theme-changer"
     >
       Click Me
     </Button>

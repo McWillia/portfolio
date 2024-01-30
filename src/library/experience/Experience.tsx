@@ -11,10 +11,6 @@ interface ExperienceProps {
   techUsed?: string[];
 }
 
-<Text fontSize={"2xl"} fontFamily={"silk"} id="xp_section">
-  Experience
-</Text>;
-
 const Experience = ({
   startDate,
   endDate,
@@ -23,11 +19,10 @@ const Experience = ({
   blurb,
   techUsed,
 }: ExperienceProps) => {
-
   const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
 
   return (
-    <Flex direction={"column"} paddingBottom={5}>
+    <Flex direction={"column"} paddingBottom={5} data-testid="experience">
       <Flex fontSize={"xl"} direction={isDesktopOrLaptop ? "row" : "column"}>
         <Text fontWeight={"bold"}>{company}</Text> <Text>/ {title}</Text>
       </Flex>
@@ -51,7 +46,7 @@ const Experience = ({
         </Text>
       )}
     </Flex>
-  )
+  );
 };
 
 export { Experience, type ExperienceProps };

@@ -16,7 +16,7 @@ import {
   xp_sh4,
   xp_sh5,
   cert_d,
-  getContact
+  getContact,
 } from "../config/commonText";
 import { ExternalLink } from "../../library/external_link";
 
@@ -117,8 +117,11 @@ const Desktop = () => {
           <Experience {...xp_sh5} />
           <Experience {...xp_sh4} />
 
-          <ExternalLink fontSize={"2xl"} displayText={"Full CV Here"} hrefVal={"/portfolio/StevenMcWilliam_CS.pdf"}/>
-
+          <ExternalLink
+            fontSize={"2xl"}
+            displayText={"Full CV Here"}
+            hrefVal={"/portfolio/StevenMcWilliam_CS.pdf"}
+          />
         </BubbleCard>
 
         {/* ---------------------- Site creation SECTION ---------------------- */}

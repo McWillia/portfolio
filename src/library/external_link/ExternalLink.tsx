@@ -6,7 +6,7 @@ import {
   StateType,
 } from "../../application/redux/constants";
 
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 interface ExternalLinkProps extends LinkProps {
   displayText: string;
@@ -19,11 +19,18 @@ const ExternalLink = ({ displayText, hrefVal, ...rest }: ExternalLinkProps) => {
   );
 
   return (
-    <Link {...rest} href={hrefVal}  display={"flex"} alignItems={"center"} color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`} fontWeight={"semibold"} >
+    <Link
+      {...rest}
+      href={hrefVal}
+      display={"flex"}
+      alignItems={"center"}
+      color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`}
+      fontWeight={"semibold"}
+      data-testid="external-link"
+    >
       {displayText} <ExternalLinkIcon marginX={2} />
     </Link>
   );
-
 };
 
 export { ExternalLink };

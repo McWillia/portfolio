@@ -6,7 +6,6 @@ import {
   StateType,
 } from "../../application/redux/constants";
 
-
 interface StyledLinkProps extends LinkProps {
   displayText: string;
   hrefVal: string;
@@ -24,6 +23,7 @@ const StyledLink = ({ displayText, hrefVal }: StyledLinkProps) => {
       color={"white"}
       fontSize={"xl"}
       fontFamily={"silk"}
+      data-testid="styled-link"
     >
       - {displayText}
     </Link>

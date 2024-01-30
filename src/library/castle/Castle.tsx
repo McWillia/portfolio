@@ -9,10 +9,7 @@ interface CastleProps {
   buildingColour: string;
 }
 
-const Castle = ({
-  skyColour = "day.light.500",
-  buildingColour = "day.primary.500",
-}: CastleProps) => (
+const Castle = ({ skyColour, buildingColour }: CastleProps) => (
   <Flex w={"100%"} flexDirection={"column"} flexGrow={1}>
     <Header skyColour={skyColour} buildingColour={buildingColour} />
     <Middle buildingColour={buildingColour} />
