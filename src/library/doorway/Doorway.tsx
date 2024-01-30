@@ -18,6 +18,7 @@ const Doorway = ({ skyColour, buildingColour }: DoorwayProps) => {
       w={"100%"}
       bg={buildingColour}
       flexGrow={0}
+      data-testid="doorway"
     >
       <Flex w={"100%"} bg={skyColour} clipPath={DOOR_CLIP_PATH} />
     </Flex>

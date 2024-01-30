@@ -10,8 +10,8 @@ interface CastleProps {
 }
 
 const Castle = ({
-  skyColour = "day.light.500",
-  buildingColour = "day.primary.500",
+  skyColour,
+  buildingColour,
 }: CastleProps) => (
   <Flex w={"100%"} flexDirection={"column"} flexGrow={1}>
     <Header skyColour={skyColour} buildingColour={buildingColour} />

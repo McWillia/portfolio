@@ -1,6 +1,4 @@
 import { CHANGE_THEME } from "./actions";
-
-// import {combineReducers} from "redux";
 import { COLOUR_THEME_OPTIONS, initialState } from "./constants";
 
 const themeReducer = (state = initialState, action: { type: string }) => {

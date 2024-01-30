@@ -19,7 +19,15 @@ const ExternalLink = ({ displayText, hrefVal }: ExternalLinkProps) => {
   );
 
   return (
-    <Link href={hrefVal} isExternal display={"flex"} alignItems={"center"} color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`} fontWeight={"semibold"}>
+    <Link 
+      href={hrefVal} 
+      isExternal 
+      display={"flex"} 
+      alignItems={"center"}
+      color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`} 
+      fontWeight={"semibold"}
+      data-testid="external-link"
+    >
       {displayText} <ExternalLinkIcon marginX={2} />
     </Link>
   );

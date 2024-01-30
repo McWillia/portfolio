@@ -20,7 +20,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
   const [isDesktopOrLaptop] = useMediaQuery("(min-width: 1244px)");
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = () => {      
       setPaddingVal(window.scrollY);
     };
 
@@ -40,6 +40,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       paddingTop={paddingVal}
       transition={"0.2s"}
       paddingLeft={2}
+      data-testid="castle-middle-desktop"
     >
       <Heading fontSize={"7xl"} fontFamily={"silk"} color={"white"}>
         Steven
@@ -57,10 +58,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
         Aspiring Scrum Master
       </Text>
 
-      <StyledLink
-        displayText={"about and contact"}
-        hrefVal={"#about_section"}
-      />
+      <StyledLink displayText={"about"} hrefVal={"#about_section"} />
       <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
       <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
       <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
@@ -73,6 +71,8 @@ const Middle = ({ buildingColour }: MiddleProps) => {
       direction={"column"}
       flexGrow={1}
       paddingLeft={2}
+      data-testid="castle-middle-mobile"
+
     >
       <Heading fontSize={"5xl"} fontFamily={"silk"} color={"white"}>
         Steven

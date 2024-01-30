@@ -7,13 +7,6 @@ import { Card, CardBody } from "@chakra-ui/react";
 const meta: Meta<typeof Middle> = {
   component: Middle,
   argTypes: {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    // variant: {
-    //   options: ["primary", "secondary"],
-    //   control: { type: "radio" },
-    //   default: "primary",
-    // },
   },
 };
 

@@ -24,6 +24,7 @@ const StyledLink = ({ displayText, hrefVal }: StyledLinkProps) => {
       color={"white"}
       fontSize={"xl"}
       fontFamily={"silk"}
+      data-testid="styled-link"
     >
       - {displayText}
     </Link>

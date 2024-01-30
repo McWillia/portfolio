@@ -40,7 +40,7 @@ export const cert_csm: ExperienceProps = {
   startDate: "Dec 2023",
   title: "Scrum Alliance",
   company: "Certified Scrum Master",
-  blurb:<Text>I validated my knowledge and understanding of agile methodologies and their use in practical software development as well as better understand the nuance of the roles and responsibilities of the product and development teams.</Text>,
+  blurb:<Text>I attained certification as a scrum master by validated my knowledge and understanding of agile methodologies and their use in practical software development as well as better understand the nuance of the roles and responsibilities of the product and development teams.</Text>,
 };
 
 export const getSiteInfo =
