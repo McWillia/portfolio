@@ -44,7 +44,7 @@ export const cert_csm: ExperienceProps = {
 };
 
 export const getSiteInfo =
-  "I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact. I've made use of Chakra's useMediaQuery hook to check for screen width in order to provide a mobile friendly layout for the site as well as adapt components to a mobile friendly UX.";
+  "I built this site using React and Typescript. It makes use of the Chakra UI component library for the styled system and uses Vite as the build manager. I made use of redux for the theme control in order to not need to pass around a theme key to every child, instead letting them pull from the global state if they need to interact. I've made use of Chakra's useMediaQuery hook to check for screen width in order to provide a mobile friendly layout for the site as well as adapt components to a mobile friendly UX. Testing has been implemented using react testing library and Jest.";
 
 export const xp_bw: ExperienceProps = {
   key: "xp_bw",
