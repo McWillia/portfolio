@@ -24,7 +24,7 @@ const Experience = ({
   return (
     <Flex direction={"column"} paddingBottom={5} data-testid="experience">
       <Flex fontSize={"xl"} direction={isDesktopOrLaptop ? "row" : "column"}>
-        <Text fontWeight={"bold"}>{company}</Text> <Text>/ {title}</Text>
+        <Text fontWeight={"bold"}>{company}</Text> <Text> / {title}</Text>
       </Flex>
       {endDate && endDate.length > 0 ? (
         <Text fontWeight={"thin"}>

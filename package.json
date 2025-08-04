@@ -8,6 +8,21 @@
   "bugs": {},
   "license": "MIT",
   "private": true,
+   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "lint:check": "npx eslint ./src",
+    "lint:fix": "npx eslint --fix ./src",
+    "prettier:check": "npx prettier ./src --check",
+    "prettier:fix": "npx prettier ./src --write",
+    "codestyle:check": "npm run lint:check && npm run prettier:check",
+    "codestyle:fix": "npm run lint:fix && npm run prettier:fix",
+    "test": "jest --coverage",
+    "test:all": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.1",
@@ -21,23 +36,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
+    "react-router": "^7.7.1",
+    "react-router-dom": "^7.7.1",
     "reactflow": "^11.9.4",
     "redux": "^5.0.1"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build:storybook": "storybook build",
-    "lint:check": "npx eslint ./src",
-    "lint:fix": "npx eslint --fix ./src",
-    "prettier:check": "npx prettier ./src --check",
-    "prettier:fix": "npx prettier ./src --write",
-    "codestyle:check": "npm run lint:check && npm run prettier:check",
-    "codestyle:fix": "npm run lint:fix && npm run prettier:fix",
-    "test":"jest --coverage",
-    "test:all":"jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'"
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.0.1",

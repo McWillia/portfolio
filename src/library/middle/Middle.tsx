@@ -31,14 +31,13 @@ const Middle = ({ buildingColour }: MiddleProps) => {
     };
   }, []);
 
-  return isDesktopOrLaptop ? (
+  return (
     <Flex
       w={"100%"}
       bg={buildingColour}
       direction={"column"}
       flexGrow={1}
-      paddingTop={paddingVal}
-      transition={"0.2s"}
+      paddingTop={isDesktopOrLaptop ? paddingVal : 0}
       paddingLeft={2}
       data-testid="castle-middle-desktop"
     >
@@ -53,47 +52,14 @@ const Middle = ({ buildingColour }: MiddleProps) => {
         color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
         fontSize={"3xl"}
       >
-        Frontend Developer //
+        Ex-Frontend Developer //
         <br />
-        Aspiring Scrum Master
+        Aspiring Nurse
       </Text>
 
-      <StyledLink displayText={"about"} hrefVal={"#about_section"} />
-      <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
-      <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
-      <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
-      <StyledLink displayText={"Site Info"} hrefVal={"#site_section"} />
-    </Flex>
-  ) : (
-    <Flex
-      w={"100%"}
-      bg={buildingColour}
-      direction={"column"}
-      flexGrow={1}
-      paddingLeft={2}
-      data-testid="castle-middle-mobile"
-    >
-      <Heading fontSize={"5xl"} fontFamily={"silk"} color={"white"}>
-        Steven
-        <br />
-        McWilliam
-      </Heading>
-
-      <Text
-        fontFamily={"silk"}
-        color={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
-        fontSize={"xl"}
-      >
-        Frontend Developer //
-        <br />
-        Aspiring Scrum Master
-      </Text>
-
-      <StyledLink displayText={"about"} hrefVal={"#about_section"} />
-      <StyledLink displayText={"certification"} hrefVal={"#cert_section"} />
-      <StyledLink displayText={"tech"} hrefVal={"#tech_section"} />
-      <StyledLink displayText={"xp"} hrefVal={"#xp_section"} />
-      <StyledLink displayText={"Site Info"} hrefVal={"#site_section"} />
+      <StyledLink displayText={"HOME"} hrefVal={"/portfolio/"} />
+      <StyledLink displayText={"CV"} hrefVal={"/portfolio/cv"} />
+      <StyledLink displayText={"Art"} hrefVal={"/portfolio/writing"} />
     </Flex>
   );
 };

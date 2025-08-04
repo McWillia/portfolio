@@ -5,6 +5,7 @@ import {
   COLOUR_THEME_OPTIONS,
   StateType,
 } from "../../application/redux/constants";
+import { NavLink } from "react-router";
 
 interface StyledLinkProps extends LinkProps {
   displayText: string;
@@ -17,16 +18,17 @@ const StyledLink = ({ displayText, hrefVal }: StyledLinkProps) => {
   );
 
   return (
-    <Link
-      href={hrefVal}
-      _hover={{ bg: `${COLOUR_THEME_OPTIONS[colourThemeVal]}.contrast.500` }}
-      color={"white"}
-      fontSize={"xl"}
-      fontFamily={"silk"}
-      data-testid="styled-link"
-    >
-      - {displayText}
-    </Link>
+    <NavLink to={hrefVal}>
+      <Link
+        _hover={{ bg: `${COLOUR_THEME_OPTIONS[colourThemeVal]}.contrast.500` }}
+        color={"white"}
+        fontSize={"xl"}
+        fontFamily={"silk"}
+        data-testid="styled-link"
+      >
+        - {displayText}
+      </Link>
+    </NavLink>
   );
 };
 

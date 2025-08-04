@@ -14,11 +14,22 @@ export const getAboutText = (
   <Flex flexDirection={"column"}>
     <Text>
       I am a young professional trained in software engineering and software
-      development practices living on Vancouver Island, BC. I completed my
-      Bachelors degree in Computer Science at the University of St Andrews in
-      2020 and since then have been working as a frontend developer. I want to
-      increase my skillsets by transitioning to other roles in the software
-      development space and to that end, got myself certified as a scrum master.
+      development practices however I am looking to transition to more people
+      oriented roles and thus have decided to pursue a career in nursing.
+      <br />
+      <br />
+      I completed my Bachelors degree in Computer Science at the University of
+      St Andrews in 2020 and spent a few years working as a frontend developer
+      and then a project coordinator. However I found this work unsatisfying due
+      to the constant pressures of capitalism really ruining what seems like
+      good and humane work.
+      <br />
+      <br />I was living in Canada last year and when I returned to Scotland I
+      had changed quite strongly in my political stance, finding myself going
+      deeper and deeper into leftist politics and radical organisation. To this
+      end, I wanted to update this site to provide links to all the content I
+      write as well as art I create as well as anything else I want to put on
+      here.
     </Text>
   </Flex>
 );
@@ -54,6 +65,50 @@ export const cert_csm: ExperienceProps = {
   ),
 };
 
+export const cert_smhp: ExperienceProps = {
+  key: "cert_smhp",
+  startDate: "July 2025",
+  title: "Complete Training (Inverclyde) Ltd",
+  company: "Scottish Manual Handling Passport",
+  blurb: (
+    <Text>
+      I trained through the Scottish Manual Handling Passport Scheme completing
+      Modules A-E in order to develop my practical skills in assisting with
+      moving people. This covered working with mechanical hoists as well as
+      using tools like glide sheets to safely manouver individuals.
+    </Text>
+  ),
+};
+
+export const cert_fh: ExperienceProps = {
+  key: "cert_fh",
+  startDate: "July 2025",
+  title: "Complete Training (Inverclyde) Ltd",
+  company: "Food Hygine/HACCP and Infection Control",
+  blurb: (
+    <Text>
+      I completed training on the principles of Food Hygine as well as on
+      Infection control. This has developed my skills in dynamic and on going
+      risk assessment as well as build my knowledge on safe practices when
+      dealing with food.
+    </Text>
+  ),
+};
+
+export const cert_fa: ExperienceProps = {
+  key: "cert_fa",
+  startDate: "July 2025",
+  title: "Glasgow Kelvin College ",
+  company: "Emergency First Aid At Work",
+  blurb: (
+    <Text>
+      I completed training on the principles of first aid including how to
+      approach a first Aid incident safely as well as practical skills around
+      chest compressions and basic lifesaving skills.
+    </Text>
+  ),
+};
+
 export const getSiteInfo = (
   <Flex flexDirection={"column"}>
     <Text>
@@ -65,7 +120,7 @@ export const getSiteInfo = (
       useMediaQuery hook to check for screen width in order to provide a mobile
       friendly layout for the site as well as adapt components to a mobile
       friendly UX. Testing has been implemented using react testing library and
-      Jest.
+      Jest. Routing is implemented using react router.
     </Text>
     <ExternalLink
       fontSize={"2xl"}
@@ -75,6 +130,80 @@ export const getSiteInfo = (
     />
   </Flex>
 );
+
+export const xp_cct: ExperienceProps = {
+  key: "xp_cct",
+  startDate: "July 2025",
+  endDate: "Ongoing",
+  title: "Digitial Inclusion Officer",
+  company: "Connect Community Trust",
+  blurb: (
+    <Text>
+      <UnorderedList styleType="none">
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Working with digitally excluded people referred to the Trust to
+          increase their technical skills and confidence
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Assisted with understanding welfare rights systems and signposting to
+          further supports available
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Designed and delivered presentations on fraud and scam prevention in
+          online spaces
+        </ListItem>
+      </UnorderedList>
+    </Text>
+  ),
+};
+
+export const xp_pan: ExperienceProps = {
+  key: "xp_pan",
+  startDate: "Feburary 2025",
+  endDate: "Ongoing",
+  title: "Volunteer Digitial Inclusion Officer",
+  company: "Pollokshaws Area Network",
+  blurb: <Text />,
+};
+
+export const xp_v: ExperienceProps = {
+  key: "xp_v",
+  startDate: "20th Feburary 2024",
+  endDate: "11th October 2024",
+  title: "Project Cooridinator",
+  company: "Vretta Inc",
+  blurb: (
+    <Text>
+      <UnorderedList styleType="none">
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Managed a team of developers to build an online assessment platform
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Used Notion to build an agile task management system and document the
+          project
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Worked with management to understand and communicate the complex goals
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Organised and ran planning meetings to define implementation timelines
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon} />
+          Worked with external clients and learned about expectation management
+        </ListItem>
+      </UnorderedList>
+    </Text>
+  ),
+  techUsed: ["Notion"],
+};
 
 export const xp_bw: ExperienceProps = {
   key: "xp_bw",
@@ -151,6 +280,32 @@ export const xp_jpm: ExperienceProps = {
     </Text>
   ),
   techUsed: ["React", "NodeJS", "MariaDB", "Springboot", "REST API"],
+};
+
+export const xp_sec: ExperienceProps = {
+  key: "xp_sec",
+  startDate: "2017",
+  endDate: "2020",
+  title: "Door Supervisor",
+  company: "Various Companies",
+  blurb: (
+    <UnorderedList styleType="none">
+      <ListItem>
+        <ListIcon as={ChevronRightIcon} />
+        Worked at the Oran Mor and The Garage in Glasgow as well as Strike Force
+        Security who did event work in St Andrews
+      </ListItem>
+      <ListItem>
+        <ListIcon as={ChevronRightIcon} />
+        Worked as part of the security team in various pubs, clubs and event
+        spaces
+      </ListItem>
+      <ListItem>
+        <ListIcon as={ChevronRightIcon} />
+        Responded to high pressure situations in a calm and de-escalating manner
+      </ListItem>
+    </UnorderedList>
+  ),
 };
 
 export const xp_i: ExperienceProps = {
