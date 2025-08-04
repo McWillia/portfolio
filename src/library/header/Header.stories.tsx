@@ -1,8 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Header, HeaderProps } from "./Header";
+import { Header } from "./Header";
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
+import { ThemeChanger } from "../theme_changer";
+import {
+  COLOUR_THEME_OPTIONS,
+  StateType,
+} from "../../application/redux/constants";
+import { useSelector } from "react-redux";
 
 const meta: Meta<typeof Header> = {
   component: Header,
@@ -22,13 +28,19 @@ type Story = StoryObj<typeof Header>;
 
 export const Primary: Story = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  render: ({
-    skyColour = "day.light.500",
-    buildingColour = "day.primary.500",
-  }: HeaderProps) => {
+  render: () => {
+    const colourThemeVal: COLOUR_THEME_OPTIONS = useSelector(
+      (state: StateType) => state.colourTheme,
+    );
     return (
       <Flex padding={0} bg="green.500">
-        <Header skyColour={skyColour} buildingColour={buildingColour} />
+        <Header
+          skyColour={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.light.500`}
+          buildingColour={`${COLOUR_THEME_OPTIONS[colourThemeVal]}.primary.500`}
+        />
+        <Box position={"absolute"} top={0} right={0}>
+          <ThemeChanger />
+        </Box>
       </Flex>
     );
   },

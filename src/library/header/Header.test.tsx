@@ -16,7 +16,7 @@ describe("Header Component", () => {
       </Provider>,
     );
 
-    expect(screen.getByTestId("flag")).toBeInTheDocument();
+    expect(screen.getByTestId("scottish_flag")).toBeInTheDocument();
     expect(screen.getByTestId("header")).toBeInTheDocument();
   });
 });

@@ -6,6 +6,23 @@ const SunsetTheme = extendBaseTheme({
       blue: "#005EB8",
       brown: "#8B4513",
     },
+    palestine: {
+      red: "#E4312b",
+      green: "#149954",
+    },
+    sudan: {
+      red: "#D21034",
+      green: "#007229",
+    },
+    drc: {
+      blue: "#0085CA",
+      yellow: "#FFD100",
+      red: "#EF3340",
+    },
+    trans: {
+      blue: "#7BCCE5",
+      pink: "#F4AEC8",
+    },
     day: {
       primary: {
         500: "#ee5d6c", //
