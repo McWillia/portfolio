@@ -59,7 +59,7 @@ const Middle = ({ buildingColour }: MiddleProps) => {
 
       <StyledLink displayText={"HOME"} hrefVal={"/portfolio/"} />
       <StyledLink displayText={"CV"} hrefVal={"/portfolio/cv"} />
-      <StyledLink displayText={"Art"} hrefVal={"/portfolio/writing"} />
+      <StyledLink displayText={"Art"} hrefVal={"/portfolio/art"} />
     </Flex>
   );
 };

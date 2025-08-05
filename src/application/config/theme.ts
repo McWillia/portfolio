@@ -26,7 +26,7 @@ const SunsetTheme = extendBaseTheme({
     day: {
       primary: {
         500: "#ee5d6c", //
-        100: "#ffd1d1", //
+        100: "#fad1d5", //
       },
       dark: {
         500: "#6a0d83", //
@@ -49,7 +49,7 @@ const SunsetTheme = extendBaseTheme({
     dawn: {
       primary: {
         500: "#7597c5", //
-        100: "#ffd1d1", //
+        100: "#dbe4f0", //
       },
       dark: {
         500: "#24344b", //
@@ -72,7 +72,7 @@ const SunsetTheme = extendBaseTheme({
     night: {
       primary: {
         500: "#373866", //
-        100: "#ffd1d1", //
+        100: "#dedeed", //
       },
       dark: {
         500: "#1b1725", //

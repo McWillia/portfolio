@@ -1,15 +1,7 @@
 import { ExperienceProps } from "../../library/experience";
 import React from "react";
-import {
-  Text,
-  ListItem,
- 
-  Flex,
-} from "@chakra-ui/react";
-import {
-  UnorderedList,
-  ListIcon,
-} from "@chakra-ui/layout";
+import { Text, ListItem, Flex } from "@chakra-ui/react";
+import { UnorderedList, ListIcon } from "@chakra-ui/layout";
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { ExternalLink } from "../../library/external_link";
@@ -116,26 +108,27 @@ export const cert_fa: ExperienceProps = {
 export const getSiteInfo = (
   <Flex flexDirection={"column"}>
     <Text>
-      I stand in solidarity with working class people across the world and I see many conflicts that are driven by imperialism. 
-      To that end, I've made the flag change randomly to that of an oppressed people. 
-      I believe in a peacful, radical upheaval of the state system to a global system of mutal aid and calmness.
-      Invasion is not justified and I hold a strong anti war stance while recognising the need for resistance.
-      It is not for the UK or US to dictate which regimes should rise and fall. 
-      They have proven their incompetence through years of neo-libralism which has failed and now they cower behind protectionism and warfare economics.
-      We cannot allow our governments to sail us into war. We must resist. We must resist now.
-
-      <br/>
-      <br/>
+      I stand in solidarity with working class people across the world and I see
+      many conflicts that are driven by imperialism. To that end, I've made the
+      flag change randomly to that of an oppressed people. I believe in a
+      peacful, radical upheaval of the state system to a global system of mutal
+      aid and calmness. Invasion is not justified and I hold a strong anti war
+      stance while recognising the need for resistance. It is not for the UK or
+      US to dictate which regimes should rise and fall. They have proven their
+      incompetence through years of neo-libralism which has failed and now they
+      cower behind protectionism and warfare economics. We cannot allow our
+      governments to sail us into war. We must resist. We must resist now.
+      <br />
+      <br />
       Free Palestine
-      <br/>
+      <br />
       Free Sudan
-      <br/>
+      <br />
       Free the Democratic Republic of Congo
-      <br/>
+      <br />
       Free the Dolls 😘
-
-      <br/>
-      <br/>
+      <br />
+      <br />
     </Text>
     <Text>
       I built this site using React and Typescript. It makes use of the Chakra

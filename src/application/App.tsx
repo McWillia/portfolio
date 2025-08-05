@@ -86,7 +86,7 @@ function App() {
         >
           <Route path="/portfolio/" element={<AboutBody />} />
           <Route path="/portfolio/cv" element={<CVBody />} />
-          <Route path="/portfolio/writing" element={<ArtBody />} />
+          <Route path="/portfolio/art" element={<ArtBody />} />
         </Route>
       </Routes>
     </BrowserRouter>
