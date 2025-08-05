@@ -73,7 +73,7 @@ const CVBody = () => {
           <ExternalLink
             fontSize={"2xl"}
             displayText={"View PDF CV Here"}
-            hrefVal={"/portfolio/StevenMcWilliam_CS.pdf"}
+            hrefVal={"/portfolio/cv.pdf"}
           />
         </BubbleCard>
 
