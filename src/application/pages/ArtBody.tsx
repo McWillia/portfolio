@@ -19,19 +19,34 @@ const TAG_LIST = {
   art: "art",
   colour: "colour",
   monotone: "monotone",
+  article: "article",
 };
 
 const ArtBody = () => {
   const artPieces: artInterface[] = [
     {
-      filePath: "/wall.pdf",
+      filePath:
+        "https://www.counterfire.org/article/palantirs-involvement-in-the-nhs-shows-the-interconnectedness-of-genocide-and-welfare-cuts/",
+      title: "Palantir's involvement in the NHS",
+      blurb: "Written because Palantir are scary as fuck.",
+      tags: [TAG_LIST.written, TAG_LIST.article],
+    },
+    {
+      filePath:
+        "https://www.counterfire.org/article/palestine-solidarity-at-the-fringe/",
+      title: "Palestine solidarity at the Fringe",
+      blurb: "Written because lots of people were doing some good shit.",
+      tags: [TAG_LIST.written, TAG_LIST.article],
+    },
+    {
+      filePath: "/portfolio/wall.pdf",
       title: "A Wall of Monitors Showing Absolutely Nothing",
       blurb:
         "Written a while ago, I want to saw in 2019 or maybe 2020. It's mad I can't remember if its pre or post covid.",
       tags: [TAG_LIST.written, TAG_LIST.prose],
     },
     {
-      filePath: "/Clearence.pdf",
+      filePath: "/portfolio/Clearence.pdf",
       title: "Clearance",
       blurb:
         "I wrote and submitted this for my friend's literary mag, Glyph, for the Heros and Villains theme. Unfortunately, it didn't make the cut but I was pleased to have created the idea and did it justice. I thought it was an interesting feeling to explore.",
@@ -39,32 +54,32 @@ const ArtBody = () => {
     },
 
     {
-      filePath: "/alien2.png",
+      filePath: "/portfolio/alien2.png",
       title: "An Alien on my wall",
       tags: [TAG_LIST.art, TAG_LIST.colour, TAG_LIST.monotone],
     },
     {
-      filePath: "/alien3.png",
+      filePath: "/portfolio/alien3.png",
       title: "A second Alien on my wall",
       tags: [TAG_LIST.art, TAG_LIST.colour, TAG_LIST.monotone],
     },
     {
-      filePath: "/alien4.png",
+      filePath: "/portfolio/alien4.png",
       title: "An Alien on a wall in Canada",
       tags: [TAG_LIST.art, TAG_LIST.colour, TAG_LIST.monotone],
     },
     {
-      filePath: "/alien5.png",
+      filePath: "/portfolio/alien5.png",
       title: "A second Alien on a wall in Canada",
       tags: [TAG_LIST.art, TAG_LIST.colour, TAG_LIST.monotone],
     },
     {
-      filePath: "/alien1.png",
+      filePath: "/portfolio/alien1.png",
       title: "An Alien I think is in Canada?",
       tags: [TAG_LIST.art, TAG_LIST.colour, TAG_LIST.monotone],
     },
     {
-      filePath: "/self1.png",
+      filePath: "/portfolio/self1.png",
       title: "Self Portrait",
       blurb:
         "This is a drawing of myself that I sent to Layli while she was in Canada and I hadn't left yet. The photo it was drawn from was a ferry ride from Gourock to whatever's on the other side. I was going to draw the others but I was so pleased with it. I left it. I rarely leave it.",
@@ -77,8 +92,6 @@ const ArtBody = () => {
   );
 
   const [filterValues, setFilterValues] = useState<string[]>([]);
-
-  console.log(filterValues);
 
   return (
     <Flex flexDirection={"column"}>
@@ -113,10 +126,7 @@ const ArtBody = () => {
               {artPiece.title}
             </Text>
             {artPiece.blurb ? <Text>{artPiece.blurb}</Text> : <div />}
-            <ExternalLink
-              displayText={"Link"}
-              hrefVal={"/portfolio" + artPiece.filePath}
-            />
+            <ExternalLink displayText={"Link"} hrefVal={artPiece.filePath} />
           </BubbleCard>
         ))}
     </Flex>

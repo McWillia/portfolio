@@ -5,6 +5,7 @@ import { UnorderedList, ListIcon } from "@chakra-ui/layout";
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { ExternalLink } from "../../library/external_link";
+import { HorizontalLine } from "../../library/horizontalLine";
 
 export const getAboutText = (
   <Flex flexDirection={"column"}>
@@ -118,18 +119,22 @@ export const getSiteInfo = (
       incompetence through years of neo-libralism which has failed and now they
       cower behind protectionism and warfare economics. We cannot allow our
       governments to sail us into war. We must resist. We must resist now.
-      <br />
-      <br />
+    </Text>
+
+    <HorizontalLine />
+
+    <Text>
       Free Palestine
       <br />
       Free Sudan
       <br />
       Free the Democratic Republic of Congo
       <br />
-      Free the Dolls 😘
-      <br />
-      <br />
+      Much love to the Dolls
     </Text>
+
+    <HorizontalLine />
+
     <Text>
       I built this site using React and Typescript. It makes use of the Chakra
       UI component library for the styled system and uses Vite as the build
